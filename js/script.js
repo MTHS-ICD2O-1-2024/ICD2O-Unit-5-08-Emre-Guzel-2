@@ -15,14 +15,12 @@ function divdeNumberBtn() {
   const secondNum = parseInt(document.getElementById("second-num").value)
   let result = 0
   let remainder = firstNum
-  let stepCount = 1
 
   // While loop to do repeated subtraction 
   while (true) {
     if (remainder >= secondNum) {
       remainder = remainder - secondNum
       result++
-      stepCount++
     } else {
       break
     }
